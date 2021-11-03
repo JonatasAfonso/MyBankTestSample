@@ -35,7 +35,7 @@ namespace MyBankLib.Tests
             var account = new CheckingAccount("John Doe", 10.0);
 
             // act and assert
-            Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
+            Assert.ThrowsException<ArgumentException>(() => account.Withdraw(20.0));
         }
 
         [DataTestMethod]

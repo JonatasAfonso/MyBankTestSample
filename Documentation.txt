@@ -1,0 +1,46 @@
+https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
+
+Testes com MSTestes passando suíte de valores
+Setup and tear down
+
+ [TestFixture]
+    public partial class MyTestClass
+    {
+        [SetUp]
+        public void Init()
+        {
+            // monitored
+        }
+
+        [PexMethod]
+        public void MyTest(int i)
+        {
+        }
+
+        [TearDown]
+        public void Dispose()
+        {
+            // monitored
+        }
+    }
+	
+Módulo 10 do - 20486
+
+
+https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql
+
+https://docs.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing?view=vs-2019&tabs=dotnet%2Cmstest
+
+Material feito para a Fidelidade sobre testes
+
+Check that your code is working as expected by creating and running unit tests. It's called unit testing because you break down the functionality of your program into discrete testable behaviors that you can test as individual units.
+
+
+Para montar a documentação
+https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2019#the-mybank-solution-example	
+
+
+Falta integrar com o GitHub ou o AzureDevOps (a cereja do bolo)
+Eventualmetne com o Sonar
+
+
