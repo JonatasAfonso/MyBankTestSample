@@ -23,7 +23,6 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      
     - name: Generate coverage report
       run: |
         cd ./MyBankTests/
@@ -32,7 +31,7 @@ jobs:
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: ./MyBankTests/TestResults/coverage.info 
+        path-to-lcov: ./TestResults/coverage.info 
     - name: Build and deploy package
       run: |
         cd ./MyBank/
