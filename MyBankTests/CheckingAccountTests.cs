@@ -12,6 +12,7 @@ namespace MyBankLib.Tests
     public class CheckingAccountTests
     {
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void Withdraw_ValidAmount_ChangesBalance()
         {
             // arrange
